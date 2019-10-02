@@ -34,8 +34,8 @@ module.exports = {
     loom_dapp_chain: {
       provider: function() {
         const chainId = 'default'
-        const writeUrl = 'http://127.0.0.1:46658/rpc'
-        const readUrl = 'http://127.0.0.1:46658/query'
+        const writeUrl = 'http://sidechain:46658/rpc'
+        const readUrl = 'http://sidechain:46658/query'
         const mnemonicPath = path.join(__dirname, 'loom_mnemonic')
         const privateKeyPath = path.join(__dirname, 'loom_private_key')
         if (fs.existsSync(privateKeyPath)) {
